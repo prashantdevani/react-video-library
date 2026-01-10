@@ -110,7 +110,7 @@ The Storybook contains three types of sections:
 - **Layout**: Reusable layouts for pages.
 - **Pages**: Page components that require a layout and place components inside.
 
-[👉 Open Video Storybook](https://videolibrary-alpha.labstack.site/storybook/)
+[👉 Open Video Library Storybook](https://videolibrary-alpha.labstack.site/storybook/)
 
 ## 🚀 Demo URL
 
