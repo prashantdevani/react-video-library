@@ -15,7 +15,10 @@ const Header = () => {
 
   const GITHUB_URL = window?._env_?.GITHUB_URL;
   const GITHUB_BUTTON_LABEL =
-    window?._env_?.GITHUB_BUTTON_LABEL ?? "Github CodeBase";
+    window?._env_?.GITHUB_BUTTON_LABEL ?? "Code";
+  const STORYBOOK_URL = window?._env_?.STORYBOOK_URL;
+  const STORYBOOK_BUTTON_LABEL =
+    window?._env_?.STORYBOOK_BUTTON_LABEL ?? "Storybook";
 
   return (
     <header className="h-16 border-b border-[#3b2a55] flex items-center justify-between px-4 bg-[#251838] shrink-0">
@@ -63,6 +66,17 @@ const Header = () => {
               className="bg-red-500 text-white p-2 rounded"
             >
               {GITHUB_BUTTON_LABEL}
+            </a>
+          </div>
+        )}
+        {STORYBOOK_URL && (
+          <div className="flex flex-col items-center">
+            <a
+              target="_blank"
+              href={STORYBOOK_URL}
+              className="bg-red-500 text-white p-2 rounded"
+            >
+              {STORYBOOK_BUTTON_LABEL}
             </a>
           </div>
         )}
